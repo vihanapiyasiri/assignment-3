@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>in class</title>
+    <link rel="stylesheet" href="../assest/normalize.css">
+</head>
+
+<style>
+    body{
+        overflow: hidden;
+    }
+
+    section>div:first-child{
+        background-color: red;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        left: 0;
+    }
+
+    section>div:nth-child(2){
+        background-color: green;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        right: 0;
+    }
+
+    section>div:nth-child(3){
+        background-color: orange;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    section>div:nth-child(4){
+        background-color: deeppink;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    section>div:first-child>div{
+        width: 10vw;
+        height: 10vw;
+        background-color: white;
+        border-radius: 100%;
+        position: absolute;
+
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        margin: auto;
+    }
+
+    section>div:first-child>div>div{
+        width: 5vw;
+        height: 5vw;
+        background-color: red;
+        position: absolute;
+
+        right: 0;
+
+        bottom: 0;
+        left: 0;
+        top: 0;
+        margin: auto;
+    }
+    section>div:nth-child(2)>div{
+        width: 10vw;
+        height: 10vw;
+        background-color: white;
+        border-radius: 100%;
+        position: absolute;
+
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        margin: auto;
+    }
+    section>div:nth-child(2)>div>div{
+        width: 5vw;
+        height: 5vw;
+        background-color: red;
+        position: absolute;
+
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        margin: auto;
+    }
+
+    section>div:nth-child(3)>div{
+        width: 10vw;
+        height: 10vw;
+        background-color: white;
+        border-radius: 100%;
+        position: absolute;
+
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        margin: auto;
+    }
+
+    section>div:nth-child(3)>div>div{
+        width: 5vw;
+        height: 5vw;
+        background-color: red;
+        position: absolute;
+
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        margin: auto;
+    }
+    section>div:nth-child(4)>div{
+        width: 10vw;
+        height: 10vw;
+        background-color: white;
+        border-radius: 100%;
+        position: absolute;
+
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        margin: auto;
+    }
+    section>div:nth-child(4)>div>div{
+        width: 5vw;
+        height: 5vw;
+        background-color: red;
+        position: absolute;
+
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        margin: auto;
+    }
+    section:nth-child(2)>div{
+        width: 10vw;
+        height: 10vw;
+        background-color: white;
+        position: absolute;
+
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        margin: auto;
+    }
+
+    section:nth-child(2)>div>div{
+        width: 7vw;
+        height: 7vw;
+        background-color: red;
+        border-radius: 100%;
+        position: absolute;
+
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        margin: auto;
+    }
+
+    section>div:nth-child(5){
+        width:7.5%;
+        height: 15%;
+        background-color: white;
+        position: absolute;
+        border-top-left-radius: 0;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        left: 0;
+        bottom: 0;
+
+    }
+    section>div:nth-child(6){
+        width:7.5%;
+        height: 15%;
+        background-color: white;
+        position: absolute;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 100%;
+        border-bottom-left-radius: 0;
+        left: 0;
+
+    }
+    section>div:nth-child(7){
+        width:7.5%;
+        height: 15%;
+        background-color: white;
+        position: absolute;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 100%;
+        right: 0;
+
+    }
+    section>div:nth-child(8){
+        width:7.5%;
+        height: 15%;
+        background-color: white;
+        position: absolute;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        right: 0;
+        bottom: 0;
+
+    }
+    section>div:nth-child(9){
+        width:10%;
+        height: 10%;
+        background-color: white;
+        position: absolute;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+    }
+    section>div:nth-child(10){
+        width:10%;
+        height: 10%;
+        background-color: white;
+        position: absolute;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+    }
+
+
+</style>
+
+<body>
+<section>
+
+
+    <div>
+        <div>
+            <div></div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div></div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div></div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div></div>
+        </div>
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+</section>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+</body>
+</html>s
